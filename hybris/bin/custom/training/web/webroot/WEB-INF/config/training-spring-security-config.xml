@@ -18,7 +18,7 @@
     <http access-decision-manager-ref="accessDecisionManager" use-expressions="false">
         <session-management session-authentication-strategy-ref="fixation"/>
         <intercept-url pattern="/login.jsp" access="PERMIT_ALL"/>
-        <intercept-url pattern="/**" access="HYBRIS_NOT_INITIALIZED,ROLE_CUSTOMERGROUP"/>
+        <intercept-url pattern="/hybris/config" access="HYBRIS_NOT_INITIALIZED,ROLE_CUSTOMERGROUP"/>
         <http-basic />
         <form-login 
         	always-use-default-target="false" 
